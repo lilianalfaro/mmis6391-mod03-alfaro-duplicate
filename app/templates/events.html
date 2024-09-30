@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-4">
+    <!-- Display Image at the Top -->
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='assets/Book4.jpg') }}" alt="Book Events" class="img-fluid rounded shadow-lg">
+    </div>
+
+    <!-- Events Section -->
+    <h2 class="text-center mt-4">Upcoming Events</h2>
+    <p class="text-center">Join us at Turning Pages Bookstore for our latest events, author signings, book discussions, and more!</p>
+
+    <!-- List of Events -->
+    <div class="events-list mt-4">
+        <div class="event-item my-3 p-3 border rounded shadow-sm">
+            <h4>Author Meet & Greet: Local Legends</h4>
+            <p><strong>Date:</strong> October 10, 2024, 5:00 PM - 7:00 PM</p>
+            <p>Meet your favorite local authors and discover new stories in this casual meet & greet event. Get your books signed, ask questions, and learn about their writing journeys.</p>
+        </div>
+
+        <div class="event-item my-3 p-3 border rounded shadow-sm">
+            <h4>Children's Story Time: Adventures at the Bookstore</h4>
+            <p><strong>Date:</strong> October 14, 2024, 10:00 AM - 11:30 AM</p>
+            <p>Bring your little ones for an exciting morning of stories, fun activities, and imagination! Our special guest readers will make story time an adventure to remember.</p>
+        </div>
+
+        <div class="event-item my-3 p-3 border rounded shadow-sm">
+            <h4>Book Club Night: Thrills & Mysteries</h4>
+            <p><strong>Date:</strong> October 20, 2024, 6:30 PM - 8:00 PM</p>
+            <p>Join our monthly book club discussion, featuring this month's pick, a thrilling mystery novel. Share your thoughts, dive deep into discussions, and enjoy light refreshments.</p>
+        </div>
+
+        <div class="event-item my-3 p-3 border rounded shadow-sm">
+            <h4>Poetry Slam Night</h4>
+            <p><strong>Date:</strong> October 28, 2024, 7:00 PM - 9:00 PM</p>
+            <p>Experience a night of raw emotions and powerful words at our Poetry Slam Night. Local poets take the stage to share their original works in an inspiring and supportive environment.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

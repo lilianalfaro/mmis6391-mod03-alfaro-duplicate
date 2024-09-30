@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-4">
+    <!-- Display Image at the Top -->
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='assets/milly.jpg') }}" alt="Milledgeville" class="img-fluid rounded">
+    </div>
+
+    <!-- Contact Information -->
+    <h2 class="text-center mt-4">Contact Us</h2>
+    <p class="text-center">Visit us at Turning Pages Bookstore, Milledgeville, GA, or get in touch with us at <strong>info@turningpages.com</strong>.</p>
+</div>
+{% endblock %}

@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <h2>About Turning Pages Bookstore</h2>
+    <p class="lead mt-4">Turning Pages Bookstore is your go-to spot in Milledgeville, GA, for finding the latest bestsellers, timeless classics, and hidden literary gems. Established in 1995, we’ve been dedicated to creating a welcoming space for book lovers of all ages.</p>
+
+    <!-- Centered Image -->
+    <div class="image-container my-4">
+        <img src="{{ url_for('static', filename='assets/bookstore.jpg') }}" alt="Turning Pages Bookstore" class="img-fluid rounded shadow-lg">
+    </div>
+
+    <p class="mt-4">Our cozy store is more than just a place to buy books—it's a community hub where readers gather, stories come alive, and connections are made. Whether you're looking for your next great read, attending one of our author events, or simply enjoying the inviting atmosphere, you'll always find a friendly face at Turning Pages.</p>
+</div>
+{% endblock %}

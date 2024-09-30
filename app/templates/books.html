@@ -1,10 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-4">
+    <!-- Display Images at the Top -->
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='assets/Book2.jpg') }}" alt="Book Collection" class="img-fluid rounded shadow-lg mb-3">
+        <img src="{{ url_for('static', filename='assets/Book3.jpg') }}" alt="Book Collection" class="img-fluid rounded shadow-lg mb-3">
+    </div>
+
+    <!-- Books Section -->
+    <h2 class="text-center mt-4">Our Book Selection</h2>
+    <p class="text-center">Explore our curated collection of books from bestsellers to hidden gems. Whether you're into fiction, non-fiction, or something in between, we have something for every reader.</p>
+
+    <!-- List of Books -->
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-1.jpg') }}" class="card-img-top" alt="Book Cover 1">
+                <div class="card-body">
+                    <h5 class="card-title">The Enchanted Forest</h5>
+                    <p class="card-text">A magical journey through a forest filled with mythical creatures, hidden secrets, and enchanting adventures.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-2.jpg') }}" class="card-img-top" alt="Book Cover 2">
+                <div class="card-body">
+                    <h5 class="card-title">Mystery of the Lost City</h5>
+                    <p class="card-text">Follow the gripping tale of explorers uncovering the secrets of an ancient civilization lost to time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-3.jpg') }}" class="card-img-top" alt="Book Cover 3">
+                <div class="card-body">
+                    <h5 class="card-title">The Culinary Quest</h5>
+                    <p class="card-text">A delightful cookbook that combines rich stories with delectable recipes from around the world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-4.jpg') }}" class="card-img-top" alt="Book Cover 4">
+                <div class="card-body">
+                    <h5 class="card-title">Beyond the Stars</h5>
+                    <p class="card-text">An inspiring science fiction novel that explores the vastness of space and the resilience of the human spirit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-5.jpg') }}" class="card-img-top" alt="Book Cover 5">
+                <div class="card-body">
+                    <h5 class="card-title">Life in Bloom</h5>
+                    <p class="card-text">A heartwarming tale of personal growth and transformation set against the backdrop of a charming garden.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='assets/book-cover-6.jpg') }}" class="card-img-top" alt="Book Cover 6">
+                <div class="card-body">
+                    <h5 class="card-title">Echoes of the Past</h5>
+                    <p class="card-text">A historical thriller that uncovers the hidden connections between past and present in a race against time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

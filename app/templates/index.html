@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Top Image Section -->
+<div class="text-center mb-4">
+    <img src="{{ url_for('static', filename='assets/book6.jpg') }}" alt="Books at Turning Pages" class="img-fluid rounded shadow-lg">
+</div>
+
+<!-- Hero Section with Welcome Message -->
+<section class="hero py-5 text-white text-center" style="background: linear-gradient(135deg, #d39d5b, #b5835a);">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold">Welcome to Turning Pages Bookstore</h1>
+        <p class="lead">Your cozy corner for books, community, and more in Milledgeville, GA.</p>
+        <a href="{{ url_for('books') }}" class="btn btn-lg btn-light mt-3">Explore Our Collection</a>
+    </div>
+</section>
+
+<!-- Mid Image Section -->
+<div class="text-center my-4">
+    <img src="{{ url_for('static', filename='assets/milly3.jpg') }}" alt="Milledgeville Scene" class="img-fluid rounded shadow-lg">
+</div>
+
+<!-- About Section with Some Love -->
+<section class="about-section py-5 text-center text-dark" style="background-color: #f4ede4;">
+    <div class="container">
+        <h2 class="font-weight-bold">Why You'll Love Turning Pages Bookstore</h2>
+        <p class="mt-3">At Turning Pages, we believe in the power of stories to inspire, connect, and transform. Our bookstore is more than just a shop—it's a place where memories are made, friendships blossom, and the love of reading is celebrated.</p>
+        <p>Whether you're hunting for the latest bestseller, seeking a quiet reading nook, or joining one of our community events, you'll feel right at home. Our friendly staff is always here to help you find the perfect book or chat about the latest literary buzz.</p>
+    </div>
+</section>
+
+<!-- Bottom Image Section -->
+<div class="text-center my-4">
+    <img src="{{ url_for('static', filename='assets/homepagebook.jpg') }}" alt="Books and Reading" class="img-fluid rounded shadow-lg">
+</div>
+
+<!-- Call to Action Section -->
+<section class="cta-section py-5 text-center text-white" style="background: #8b5e34;">
+    <div class="container">
+        <h2 class="font-weight-bold">Join Our Community</h2>
+        <p class="mt-2">Sign up for our newsletter to get the latest updates on new arrivals, events, and special offers!</p>
+        <a href="#" class="btn btn-outline-light btn-lg mt-3">Subscribe Now</a>
+    </div>
+</section>
+
+{% endblock %}
+
